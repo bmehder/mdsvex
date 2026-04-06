@@ -11,8 +11,8 @@
 <section>
 	<div class="outer">
 		<div class="inner">
-			<h2>Send us a message</h2>
-			<form class="form" onsubmit={event => event.preventDefault}>
+			<h2>Send Us a Message</h2>
+			<form class="form" onsubmit={event => event.preventDefault()}>
 				<div>
 					<label for="name">Name</label>
 					<input type="text" id="name" required />
@@ -46,8 +46,11 @@
 		gap: 1rem;
 	}
 
-	.form > div {
+	.form div {
 		display: grid;
 	}
 
+	.form button {
+		padding-block: 0.8rem;
+	}
 </style>

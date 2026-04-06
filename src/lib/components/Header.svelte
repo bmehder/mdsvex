@@ -1,7 +1,11 @@
+<script>
+  import logo from '$lib/assets/logo.png'
+</script>
+
 <header>
   <div class="outer">
     <div class="inner flex flex-wrap space-between align-items-center gap-1">
-      <div class="logo"><a href="/">Logo</a></div>
+      <div class="invert-1"><a href="/"><img src="{logo}" alt="logo"></a></div>
       <nav>
         <ul class="flex flex-wrap gap-1-5 padding-0 list-style-none">
           <li><a href="/">Home</a></li>
@@ -20,9 +24,8 @@
     font-size: 1.2rem;
   }
 
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+  img {
+    max-width: 12rem;
   }
   
   a {

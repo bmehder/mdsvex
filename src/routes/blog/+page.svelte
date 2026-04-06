@@ -1,7 +1,7 @@
 <script>
-	import PageTitle from '$lib/components/PageTitle.svelte'
 	import { formatDate } from '$lib/util.js'
-	
+	import PageTitle from '$lib/components/PageTitle.svelte'
+
 	const { data } = $props()
 </script>
 
@@ -17,14 +17,12 @@
 			<ul class="grid gap-3 padding-0 list-style-none">
 				{#each data.posts as post}
 					<li>
-						<div>
-							<div class="opacity-5">{formatDate(post.meta.date)}</div>
-							<h2>
-								<a href="/blog/{post.slug}">
-									{post.meta.title}
-								</a>
-							</h2>
-						</div>
+						<div class="opacity-5">{formatDate(post.meta.date)}</div>
+						<h2>
+							<a href="/blog/{post.slug}">
+								{post.meta.title}
+							</a>
+						</h2>
 						<div>{post.meta.excerpt}</div>
 					</li>
 				{/each}

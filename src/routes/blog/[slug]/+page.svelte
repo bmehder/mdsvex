@@ -1,6 +1,6 @@
 <script>
-	import PageTitle from '$lib/components/PageTitle.svelte'
 	import { formatDate } from '$lib/util.js'
+	import PageTitle from '$lib/components/PageTitle.svelte'
 
 	const { data } = $props()
 

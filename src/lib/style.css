@@ -29,12 +29,13 @@ li {
 
 button {
 	display: inline-block;
+	padding: 0.5em 1.5em;
 	background-color: dodgerblue;
 	color: white;
+
 	font: inherit;
 	font-weight: 600;
 
-	padding: 0.5em 1.5em;
 	border: none;
 	border-radius: 0.5rem;
 
@@ -93,23 +94,23 @@ form {
 }
 
 label {
-	font-weight: 600;
 	display: block;
 	margin-bottom: 0.25rem;
+	font-weight: 600;
 }
 
 input,
 select,
 textarea {
 	width: 100%;
-	font: inherit;
-
 	padding: 0.6em 0.75em;
+	
+	color: inherit;
+
+	font: inherit;
 
 	border: 1px solid #ccc;
 	border-radius: 0.4rem;
-
-	color: inherit;
 
 	transition:
 		border-color 0.2s ease,
@@ -207,4 +208,8 @@ textarea:disabled {
 
 .opacity-5 {
 	opacity: 0.5;
+}
+
+.invert-1 {
+	filter: invert(1);
 }
