@@ -11,7 +11,7 @@
 <section>
 	<div class="outer">
 		<div class="inner">
-			<img src="/hero.jpg" width="1200" height="600" alt="Rocky mountain landscape with waterfalls and low clouds" />
+			<img src="/haarlem.jpg" width="1200" height="600" alt="Rocky mountain landscape with waterfalls and low clouds" />
 		</div>
 	</div>
 </section>
