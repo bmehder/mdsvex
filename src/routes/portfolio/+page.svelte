@@ -1,7 +1,8 @@
 <script>
 	import { formatDate } from '$lib/util.js'
 	import PageTitle from '$lib/components/PageTitle.svelte'
-	
+	import Card from '$lib/components/Card.svelte'
+
 	const { data } = $props()
 </script>
 
@@ -9,26 +10,20 @@
 	<title>Portfolio</title>
 </svelte:head>
 
-<PageTitle title="Portfolio"></PageTitle>
+<PageTitle title="Portfolio" />
 
-<article>
+<section>
 	<div class="outer">
-		<div class="inner">
-			<ul class="grid auto-fill gap-3 padding-0 list-style-none">
-				{#each data.posts as post}
-					<li>
-						<div>
-							<div class="opacity-5">{formatDate(post.meta.date)}</div>
-							<h2>
-								<a href="/portfolio/{post.slug}">
-									{post.meta.title}
-								</a>
-							</h2>
-						</div>
-						<div>{post.meta.excerpt}</div>
-					</li>
-				{/each}
-			</ul>
+		<div class="inner grid auto-fill gap-3">
+			{#each data.posts as post}
+				<Card
+					image="/placeholder.jpg"
+					eyebrow={formatDate(post.meta.date)}
+					title={post.meta.title}
+					buttonUrl={'/portfolio/' + post.slug}
+					description={post.meta.excerpt}
+				/>
+			{/each}
 		</div>
 	</div>
-</article>
+</section>

@@ -178,6 +178,10 @@ textarea:disabled {
 	align-items: center;
 }
 
+.align-items-stretch {
+	align-items: stretch;
+}
+
 .gap-0-5 {
 	gap: 0.5rem;
 }

@@ -9,24 +9,26 @@
 	<title>Blog</title>
 </svelte:head>
 
-<PageTitle title="Blog"></PageTitle>
+<PageTitle title="Blog" />
 
-<article>
+<section>
 	<div class="outer">
 		<div class="inner">
 			<ul class="grid gap-3 padding-0 list-style-none">
 				{#each data.posts as post}
 					<li>
-						<div class="opacity-5">{formatDate(post.meta.date)}</div>
-						<h2>
-							<a href="/blog/{post.slug}">
-								{post.meta.title}
-							</a>
-						</h2>
-						<div>{post.meta.excerpt}</div>
+						<article>
+							<div class="opacity-5">{formatDate(post.meta.date)}</div>
+							<h2>
+								<a href="/blog/{post.slug}">
+									{post.meta.title}
+								</a>
+							</h2>
+							<div>{post.meta.excerpt}</div>
+						</article>
 					</li>
 				{/each}
 			</ul>
 		</div>
 	</div>
-</article>
+</section>

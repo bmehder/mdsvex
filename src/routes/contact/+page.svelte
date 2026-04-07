@@ -6,7 +6,7 @@
 	<title>Contact</title>
 </svelte:head>
 
-<PageTitle title="Contact"></PageTitle>
+<PageTitle title="Contact" />
 
 <section>
 	<div class="outer">

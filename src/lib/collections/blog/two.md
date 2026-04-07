@@ -28,7 +28,7 @@ This is an ordered list:
 
 This is a simple Counter component.
 
-<Counter></Counter>
+<Counter />
 
 ## Summary
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam laborum nesciunt [architecto impedit](https://example.com). Cupiditate nulla doloremque, dignissimos beatae optio neque. Dolor officiis quisquam temporibus modi blanditiis, nostrum veniam. Neque aspernatur dicta atque aperiam quae dolorem saepe, officiis corporis veniam, quaerat qui!

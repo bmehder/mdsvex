@@ -57,8 +57,6 @@
 				font-size: clamp(1.5rem, 3vw, 3rem);
 				font-weight: bold;
 				letter-spacing: 3px;
-				
-				border-radius: 0.25rem;
 			}
 		}
 	}

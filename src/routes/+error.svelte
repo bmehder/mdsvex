@@ -3,7 +3,7 @@
 	import PageTitle from '$lib/components/PageTitle.svelte'
 </script>
 
-<PageTitle title={page.status}></PageTitle>
+<PageTitle title={page.status} />
 
 <section>
 	<div class="outer">

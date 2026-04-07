@@ -11,7 +11,7 @@
 	<title>{data.post.meta.title}</title>
 </svelte:head>
 
-<PageTitle title={data.post.meta.title} date={data.post.meta.date}></PageTitle>
+<PageTitle title={data.post.meta.title} date={data.post.meta.date} />
 
 <article>
 	<div class="outer">
