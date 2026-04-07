@@ -8,19 +8,15 @@
 </script>
 
 <svelte:head>
-  <title>{data.post.meta.title}</title>
+	<title>{data.post.meta.title}</title>
 </svelte:head>
 
-<PageTitle title={data.post.meta.title}>
-	{formatDate(data.post.meta.date)}
-</PageTitle>
+<PageTitle title={data.post.meta.title} date={data.post.meta.date}></PageTitle>
 
-<section>
+<article>
 	<div class="outer">
 		<div class="inner">
 			<Post />
 		</div>
 	</div>
-</section>
-
-
+</article>

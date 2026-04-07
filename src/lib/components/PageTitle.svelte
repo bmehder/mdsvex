@@ -1,22 +1,22 @@
 <script>
-	let { title, children } = $props()
+	import { formatDate } from '$lib/util'
+
+	let { title, date } = $props()
 </script>
 
-<section>
+<div class="page-title">
 	<div class="outer">
 		<div class="inner">
       <h1>{title}</h1>
       <div class="opacity-5">
-        {@render children?.()}
+        {formatDate(date)}
       </div>
 		</div>
 	</div>
-</section>
+</div>
 
 <style>
   .inner {
-    --inner-padding-block: 3rem;
-    
     margin-bottom: 1.5rem;
     border-bottom: 1px solid;
   }

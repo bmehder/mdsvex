@@ -11,7 +11,7 @@
 
 <PageTitle title="Portfolio"></PageTitle>
 
-<section>
+<article>
 	<div class="outer">
 		<div class="inner">
 			<ul class="grid auto-fill gap-3 padding-0 list-style-none">
@@ -31,4 +31,4 @@
 			</ul>
 		</div>
 	</div>
-</section>
+</article>
