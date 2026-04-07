@@ -1,5 +1,5 @@
 <script>
-	import { formatDate } from '$lib/util.js'
+	import { formatDate } from '$lib/utils.js'
 	import PageTitle from '$lib/components/PageTitle.svelte'
 	import Card from '$lib/components/Card.svelte'
 
@@ -17,7 +17,7 @@
 		<div class="inner grid auto-fill gap-3">
 			{#each data.posts as post}
 				<Card
-					image="/placeholder.jpg"
+					image={post.meta.image}
 					eyebrow={formatDate(post.meta.date)}
 					title={post.meta.title}
 					buttonUrl={'/portfolio/' + post.slug}

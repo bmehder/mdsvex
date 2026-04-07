@@ -11,16 +11,16 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="wrapper">
+<div class="page-wrapper">
 	<Header></Header>
-	
+
 	<main>{@render children()}</main>
 	
 	<Footer></Footer>
 </div>
 
 <style>
-	.wrapper {
+	.page-wrapper {
 		min-height: 100svh;
 		display: grid;
 		align-content: start;

@@ -1,5 +1,5 @@
 <script>
-	import { formatDate } from '$lib/util'
+	import { formatDate } from '$lib/utils.js'
 
 	let { title, date } = $props()
 </script>
