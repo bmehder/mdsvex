@@ -2,6 +2,7 @@
   title: This is post one
   date: 2026-04-05
   excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure earum eum impedit obcaecati quisquam quam labore nisi explicabo laborum sed? Praesentium repellat eum rerum ea quibusdam deleniti harum quae qui, id molestias.
+  image: placeholder-4.jpg
 ---
 
 ## Heading 2

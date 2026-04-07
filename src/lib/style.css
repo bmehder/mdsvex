@@ -202,6 +202,10 @@ textarea:disabled {
 	gap: 3rem;
 }
 
+.gap-4 {
+	gap: 4rem;
+}
+
 .padding-0 {
 	padding: 0;
 }

@@ -1,16 +1,18 @@
 <script>
-	let { 
+	let {
 		image,
 		eyebrow,
 		title,
 		description,
-		buttonLabel = "Learn More &raquo",
-		buttonUrl
+		buttonLabel = 'Learn More &raquo',
+		buttonUrl,
 	} = $props()
 </script>
 
 <article class="card">
-	<img class="card-image" src={image} alt="describe the thing here..." />
+	<a href={buttonUrl}
+		><img class="card-image" src={image} alt="describe the thing here..." /></a
+	>
 	<div class="card-info">
 		<div>
 			<div class="card-eyebrow">{eyebrow}</div>
@@ -28,7 +30,7 @@
 	* {
 		box-sizing: border-box;
 	}
-	
+
 	img {
 		display: block;
 		width: 100%;
@@ -48,15 +50,15 @@
 		letter-spacing: 0.15px;
 		border-radius: 0.25rem;
 	}
-	
+
 	/* Component Styles */
 	.card {
-	  display: grid;
-	  grid-template-rows: auto 1fr;
-	  background-color: white;
-	  color: black;
-	  border-radius: 0.25rem;
-	  overflow: hidden;
+		display: grid;
+		grid-template-rows: auto 1fr;
+		background-color: white;
+		color: black;
+		border-radius: 0.25rem;
+		overflow: hidden;
 	}
 
 	.card-image {
@@ -65,21 +67,22 @@
 	}
 
 	.card-info {
-	  display: grid;
-	  grid-template-rows: auto 1fr auto;
-	  gap: 1rem;
-	  padding: 1rem;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		gap: 1rem;
+		padding: 1rem;
 	}
 
-	.card-title, .card-eyebrow {
+	.card-title,
+	.card-eyebrow {
 		margin: 0;
 	}
-	
+
 	.card-eyebrow {
-	  color: slategray;
-	  font-size: 0.7rem;
-	  text-transform: uppercase;
-	  letter-spacing: 0.7px;
+		color: slategray;
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.7px;
 	}
 
 	.card-description {

@@ -16,6 +16,7 @@
 <article>
 	<div class="outer">
 		<div class="inner">
+			<img src="/{data.post.meta.image}" alt="">
 			<Post />
 		</div>
 	</div>
