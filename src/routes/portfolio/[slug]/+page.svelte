@@ -15,9 +15,11 @@
 
 <article>
 	<div class="outer">
-		<div class="inner">
-			<img src="/{data.post.meta.image}" alt="">
-			<Post />
+		<div class="inner grid gap-1">
+			<img src="/{data.post.meta.image}" alt="" />
+			<div>
+				<Post />
+			</div>
 		</div>
 	</div>
 </article>

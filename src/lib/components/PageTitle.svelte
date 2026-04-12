@@ -20,4 +20,8 @@
     margin-bottom: 1.5rem;
     border-bottom: 1px solid;
   }
+
+  .opacity-5 {
+    opacity: 0.5;
+  }
 </style>

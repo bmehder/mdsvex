@@ -14,16 +14,19 @@
 
 <section>
 	<div class="outer">
-		<div class="inner grid auto-fill gap-3">
-			{#each data.posts as post}
-				<Card
-					image={post.meta.image}
-					eyebrow={formatDate(post.meta.date)}
-					title={post.meta.title}
-					buttonUrl={'/portfolio/' + post.slug}
-					description={post.meta.excerpt}
-				/>
-			{/each}
+		<div class="inner">
+			<h2 class="sr-only">Portfolio Items</h2>
+			<div class="grid auto-fill gap-3">
+				{#each data.posts as post}
+					<Card
+						image={post.meta.image}
+						eyebrow={formatDate(post.meta.date)}
+						title={post.meta.title}
+						buttonUrl={'/portfolio/' + post.slug}
+						description={post.meta.excerpt}
+					/>
+				{/each}
+			</div>
 		</div>
 	</div>
 </section>
